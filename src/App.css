@@ -30,7 +30,7 @@
 
 h1 {
   text-align: center;
-  font-size: 50px;
+  font-size: 45px;
   padding-top: 20px;
 }
 
@@ -55,6 +55,102 @@ h1 {
   }
 }
 
+
+/*pc버전*/
+@media screen and (min-width: 1024px) {
+  .ment {
+    padding: 30px 25px;
+    margin-left: 27%;
+  }
+  .ment * {
+    font-family: "DungGeunMo";
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+  .user_input {
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 30px;
+  }
+  .unactivebtn{
+    background-color: #707070;
+    color: white;
+    text-shadow: -1px 0 #4d4d4d, 0 1px #4d4d4d, 1px 0 #4d4d4d, 0 -1px #4d4d4d;
+    border: 1px solid #646464;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 30px;
+  }
+  .activebtn{
+    background-color: #bbee00;
+    color: white;
+    text-shadow: -1px 0 #669900, 0 1px #669900, 1px 0 #669900, 0 -1px #669900;
+    border: 1px solid #a7d501;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 30px;
+  }
+  .btn2 {
+    background-color: #e34b4b;
+    color: white;
+    text-shadow: -1px 0 #911515, 0 1px #911515, 1px 0 #911515, 0 -1px #911515;
+    border: 1px solid #d53939;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 30px;
+  }
+}
+
+/*태블릿버전*/
+@media screen and (min-width: 464px) and (max-width:1024px){
+  .ment {
+    padding: 30px 25px;
+    margin-left: 5%;
+  }
+  .ment * {
+    font-family: "DungGeunMo";
+    text-align: left;
+    font-size: 25px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+  .user_input {
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 25px;
+  }
+  .unactivebtn{
+    background-color: #707070;
+    color: white;
+    text-shadow: -1px 0 #4d4d4d, 0 1px #4d4d4d, 1px 0 #4d4d4d, 0 -1px #4d4d4d;
+    border: 1px solid #646464;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 25px;
+  }
+  .activebtn{
+    background-color: #bbee00;
+    color: white;
+    text-shadow: -1px 0 #669900, 0 1px #669900, 1px 0 #669900, 0 -1px #669900;
+    border: 1px solid #a7d501;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 25px;
+  }
+  .btn2 {
+    background-color: #e34b4b;
+    color: white;
+    text-shadow: -1px 0 #911515, 0 1px #911515, 1px 0 #911515, 0 -1px #911515;
+    border: 1px solid #d53939;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 25px;
+  }
+}
+
+/*모바일 버전*/
 @media screen and (max-width: 464px) {
   .ment {
     padding: 30px 25px;
@@ -63,6 +159,7 @@ h1 {
     font-family: "DungGeunMo";
     text-align: left;
     margin-bottom: 5px;
+    font-size: 12px;
   }
   .user_input {
     margin-top: 20px;

@@ -25,6 +25,10 @@ function App() {
 
   //게임 함수
   const gameStart = () => {
+    //유저가 값을 입력하지 않을때도 그대로
+    if(userInput == null){
+      return setAnnouncement("값을 입력하지 않았네!");
+    }
     //유저가 범위 밖의 번호를 쓰면 알려줌 기회는 그대로
     if (userInput < 1 || userInput > 100) {
       setText("");
@@ -77,10 +81,7 @@ function App() {
           <p>{announcement}</p>
           {gameOver ? null : <p>기회는 총 {chances}번 일세</p>}
           <div>
-            <div>
-              <img src="https://mblogthumb-phinf.pstatic.net/MjAyMDA2MjhfMjQy/MDAxNTkzMzA5NjMwNTE0.gmsZfbWPdTmbkN_i6z2Ci91t-vwBnmqVtI_SKJeujv8g.5UqgTTALREXR--eOPGyIqRhcJD11QCFj74f-6jrL470g.GIF.dlswns020/attack1.gif?type=w2" />
-            </div>
-
+     
             {gameOver ? null : (
               <input
                 className="user_input"
